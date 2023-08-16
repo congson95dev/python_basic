@@ -1,0 +1,14 @@
+{
+	"cargo1": {
+		"max_weight": 3, 
+		"weight": 2
+	},
+	"cargo2": {
+		"max_weight": 3, 
+		"weight": 3
+	},
+	"cargo3": {
+		"max_weight": 2, 
+		"weight": 4
+	}
+}

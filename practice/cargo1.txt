@@ -1,0 +1,14 @@
+{
+	"cargo1": {
+		"name": "a", 
+		"weight": 2
+	},
+	"cargo2": {
+		"name": "b", 
+		"weight": 3
+	},
+	"cargo3": {
+		"name": "c", 
+		"weight": 4
+	}
+}
