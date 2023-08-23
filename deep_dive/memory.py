@@ -61,3 +61,42 @@ a = [1, 2, 3]
 print(hex(id(a))) # result: 0x7f6dea9d9a00
 a.append(4)
 print(hex(id(a))) # result: 0x7f6dea9d9a00
+
+"""
+side effect
+mutable data type will have side effect
+immutable data type will not have side effect
+"""
+
+# mutable data type will have side effect
+def change_list(list_a) :
+    list_a.append(4)
+
+a = [1, 2, 3]
+change_list(a)
+print(a) # result: [1, 2, 3, 4], this is because list is mutable, so the `a` and `list_a` share the same memory address, so when we change the `list_a`, the `a` variable is also affected, this is side effect
+
+# immutable data type will not have side effect
+def change_string(string_a) :
+    string_a += ' world'
+
+a = 'hello'
+change_string(a)
+print(a) # result: 'hello', this is because string is immutable, so `a` and `string_a` (after we do string_a += ' world') is having difference memory address, so whenever we change the `string_a`, it won't affect to `a`
+
+"""
+string intern
+"""
+
+# a and b have the same memory address
+a = 'hello'
+b = 'hello'
+
+# a and b will have difference memory address, because it's have "space" so python won't consider it as identify variable
+a = 'hello world'
+b = 'hello world'
+
+# a and b have the same memory address because we force it to intern by using sys.intern()
+import sys
+a = sys.intern('hello world')
+b = sys.intern('hello world')
