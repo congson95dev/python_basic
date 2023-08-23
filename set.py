@@ -1,4 +1,5 @@
-# lien ket set
+# lien ket set, set remove nhung phan tu bi duplicate, dong thoi auto sorted
+set0 = {5, 1, 2, 1, 3, 4} # => {1, 2, 3, 4, 5}
 set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5}
 setgiongnhau = set1 & set2 # lay ra phan tu giong nhau cua ca 2 set => {3, 4}
