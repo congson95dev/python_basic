@@ -1,3 +1,3 @@
 # python_basic
 
-- numpy tutorial in file: numpy_tutorial.py
+- pandas tutorial in file: pandas_tutorial.py
